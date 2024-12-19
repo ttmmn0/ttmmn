@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>espero te guste</title>
+  <style>
+    body {
+      margin: 0; /* Elimina márgenes */
+      background-color: pink; /* Fondo rosado */
+      display: flex;
+      justify-content: center; /* Centra el contenido horizontalmente */
+      align-items: center; /* Centra el contenido verticalmente */
+      flex-direction: column; /* Apila los elementos */
+      height: 100vh; /* Altura completa de la ventana */
+    }
+
+    h1 {
+      font-family: Arial, sans-serif;
+      color: white; /* Texto blanco */
+      font-size: 50px; /* Aumenta el tamaño del texto */
+      margin-bottom: 40px; /* Más espacio entre el texto y el video */
+    }
+
+    video {
+      width: 80%; /* Ajusta el ancho del video al 80% de la pantalla */
+      max-width: 800px; /* Ancho máximo */
+      border: 5px solid white; /* Borde blanco alrededor del video */
+      border-radius: 15px; /* Bordes redondeados */
+    }
+  </style>
+</head>
+<body>
+  <h1>Para ti, bonita <3</h1>
+  <video autoplay controls loop>
+    <source src="mivideo.mp4" type="video/mp4">
+    Tu navegador no soporta el elemento de video.
+  </video>
+
+  <script>
+    // Activa el sonido automáticamente
+    const video = document.querySelector("video");
+    video.muted = false; // Desactiva el mute
+  </script>
+</body>
+</html>
